@@ -1,0 +1,59 @@
+nav {
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+.teamProfile {
+  font-size: x-large;
+}
+
+img {
+  max-height: 680px;
+}
+
+:target {
+  display: block;
+  position: relative;
+  top: -60px; 
+  visibility: hidden;
+}
+
+.card{
+  margin: 10px;
+  width: 80%;
+  margin-left: 35px;
+}
+
+#emp{
+  margin: 10px;
+  margin-top:20px;
+}
+
+@media screen and (max-width: 991px) {
+  .carousel-inner {
+    margin-top: 100px;
+  }
+  :target {
+    top: -145px; 
+  }
+}
+
+@media screen and (max-width: 433px) {
+  .carousel-inner {
+    margin-top: 130px;
+  }
+  :target {
+    top: -165px; 
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .carousel-inner {
+    margin-top: 210px;
+  }
+  :target {
+    top: -205px; 
+  }
+}
+
