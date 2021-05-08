@@ -35,11 +35,6 @@ const internQuestions = [
   {type: 'input', name: 'internEmail', message: 'What is the team interns email address?',},
 ] 
 
-// const finishedQuestion = [ 
-//   {type: 'confirm', name: 'finished', message: 'Are you done entering employee info?',}, 
-// ] 
-
-
 function writeToFile(file, data) {
   fs.writeFile(file, data, (err) =>
   err ? console.log(err) : console.log('Your team profile is ready!')
@@ -91,7 +86,7 @@ function init() {
       .prompt(
         initQuestion
     )
-    // Function to write HTML file
+    // Function to prompt user with questions based on input
     .then( (answers) => {
       if (answers.employeeType === "Manager") {
         managerFunction ()
@@ -113,15 +108,13 @@ function init() {
       }
 
         // switch(answers.employeeType) {
-        //   case "Manager" : 
+        //   case "Manager": 
         //     const manager = new Manager(answers.managerName, answers.managerID, answers.managerEmail, answers.officeNum);
         
         //         // add manager to array
                 
         //     }
-            // if (answers.finished) {
-
-                
+            // if (answers.finished) {    
             // } else {init()};
 
     })
