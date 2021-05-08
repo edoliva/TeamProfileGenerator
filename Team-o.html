@@ -1,71 +1,11 @@
-function addManager (managerArray) {
-    var output = "";
-    if (managerArray[0]) {
-        for (var i=0; i<=managerArray.length-1; i+=4) {
-            output += `<div class="card">
-            <div class="card-header">
-            ${managerArray[i]}
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">ID: ${managerArray[i+1]}</h5>
-              <p class="card-text">Office number: ${managerArray[i+2]}</p>
-              <a href=mailto:${managerArray[i+3]} class="btn btn-primary">${managerArray[i+3]}</a>
-            </div>
-            </div>`
-        } 
-    }
-    return output
-}
 
-function addEngineer (engineerArray) {
-    var output = "";
-    if (engineerArray[0]) {
-        for (var i=0; i<=engineerArray.length-1; i+=4) {
-        output += `<div class="card">
-        <div class="card-header">
-        ${engineerArray[i]}
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">ID: ${engineerArray[i+1]}</h5>
-          <a href=https://github.com/${engineerArray[i+2]} target="_blank" class="btn btn-primary">GitHub</a>
-          </br></br>
-          <a href=mailto:${engineerArray[i+3]} class="btn btn-primary">${engineerArray[i+3]}</a>
-        </div>
-        </div>`
-        }
-    }
-    return output
-}
-
-function addIntern (internArray) {
-    var output = "";
-    if (internArray[0]) {
-        for (var i=0; i<=internArray.length-1; i+=4) {
-        output += `<div class="card">
-        <div class="card-header">
-        ${internArray[i]}
-        </div>
-        <div class="card-body">
-        <h5 class="card-title">ID: ${internArray[i+1]}</h5>
-        <p class="card-text">School: ${internArray[i+2]}</p>
-        <a href=mailto:${internArray[i+3]} class="btn btn-primary">${internArray[i+3]}</a>
-        </div>
-        </div>`
-        }      
-    }
-  return output
-}
-
-function generateMarkdown(managerArray, engineerArray, internArray) {
-    console.log(managerArray);
-    return `
     <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
         <link rel="stylesheet" href="Assets/CSS/style.css"/>
-        <title>${managerArray[0]}'s Team</title>
+        <title>o's Team</title>
       </head>
       <body>
         <!-- Navbar -->
@@ -118,16 +58,33 @@ function generateMarkdown(managerArray, engineerArray, internArray) {
         <nav class="navbar navbar-light bg-light" id="emp">
           <a class="navbar-brand" href="#">Managers</a>
         </nav>
-        <div class=drink-display id=drink-button-list>
-        </div>
-        ${addManager(managerArray)}
+        <div class="card">
+            <div class="card-header">
+            k
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">ID: m</h5>
+              <p class="card-text">Office number: n</p>
+              <a href=mailto:undefined class="btn btn-primary">undefined</a>
+            </div>
+            </div>
         
         <!-- <Engineers> -->
           <div id="engineers"></div>  
           <nav class="navbar navbar-light bg-light" id="emp">
             <a class="navbar-brand" href="#">Engineers</a>
           </nav>
-          ${addEngineer(engineerArray)}
+          <div class="card">
+        <div class="card-header">
+        v
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">ID: undefined</h5>
+          <a href=https://github.com/undefined target="_blank" class="btn btn-primary">GitHub</a>
+          </br></br>
+          <a href=mailto:undefined class="btn btn-primary">undefined</a>
+        </div>
+        </div>
 
         
         <!-- <Interns> -->
@@ -135,7 +92,16 @@ function generateMarkdown(managerArray, engineerArray, internArray) {
           <nav class="navbar navbar-light bg-light" id="emp">
             <a class="navbar-brand" href="#">Interns</a>
           </nav>
-          ${addIntern(internArray)}
+          <div class="card">
+        <div class="card-header">
+        a
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">ID: b</h5>
+        <p class="card-text">School: c</p>
+        <a href=mailto:d class="btn btn-primary">d</a>
+        </div>
+        </div>
 
     
         <script src="index.js"></script> 
@@ -145,8 +111,4 @@ function generateMarkdown(managerArray, engineerArray, internArray) {
     </body>
     </html>
 
-    `
-}
-
-
-module.exports = generateMarkdown;
+    
