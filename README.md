@@ -13,10 +13,11 @@ This application was created so a user could easily create a Team Profile file b
 - [License](#license)
 ## Installation
 Clone or download this repository on GitHub: https://github.com/edoliva/TeamProfileGenerator
-Deployed link: https://edoliva.github.io/TeamProfileGenerator/Team-ManagerTest1.html
+Deployed test link: https://edoliva.github.io/TeamProfileGenerator/Team-EdOliva.html
 ## Criteria
 - The user must must run "npm install", then enter "node index.js" in terminal to begin the Team Profile application.
 - The user will need to have the relevant employee information.
+- Tests can be done by entering "npm run test".
 ## Usage/coding:
 - This JS application was written to allow for a clean user experience. The general logic is as follows:
    - Once the initial criteria above is met, the user will respond to a series of prompts.
@@ -30,7 +31,7 @@ Please direct any questions regarding this application to:
 - GitHub username: edoliva
 - GitHub profile link: https://github.com/edoliva
 - Email address: edmond.oliva@gmail.com 
-- Video screencast: https://drive.google.com/file/d/1VAopSYsp_nm76p0-u7DNtnShT-rnTHAo/view
+- Video screencast: https://drive.google.com/file/d/1XIsLSf8vIzZCQHNqNNVLkHJj6SHjpTqa/view
 
 ## Credits
 Shoutout to our instructor Anthony and TA Tom! As well as everyone at Trilogy Education for making the content and grading our assignments.
